@@ -1,0 +1,19 @@
+#!/bin/bash
+for run in {1..10000}
+do 
+  save_page_as 
+  sleep 10
+  if [[ $(ls -l | wc -l) -gt 100 ]]; 
+  then
+    cd ../dir11
+  fi
+done
+# change to another directory
+#line = $(ls -l | wc -l)
+#if [ $line -gt 100 ]
+  #then
+  #temp = $(mkdir ../dir04)
+#fi
+#mv nyobi.sh save_page_as $temp/
+#cd $temp
+#done
